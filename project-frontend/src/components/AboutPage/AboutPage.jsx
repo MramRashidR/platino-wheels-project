@@ -3,7 +3,7 @@ import './AboutPage.css';
 function AboutPage() {
   return (
 
-  <div className="H">
+  <div className="background">
    
     <img src= "https://i.imgur.com/igJ2a7h.jpg" alt="pic" />
     </div>

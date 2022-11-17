@@ -6,6 +6,7 @@ import HomePage from './components/HomePage/HomePage'
 import PolicyPage from './components/PolicyPage/PolicyPage'
 import ContactPage from './components/ContactPage/ContactPage'
 import CategoryPage from './components/CategoryPage/CategoryPage'
+import NewCar from './components/NewCar/NewCar';
 
 import Bugatti from './components/Brand/Bugatti.js'
 import Ferrari from './components/Brand/Ferrari.js'
@@ -14,8 +15,8 @@ import Rivian from './components/Brand/Rivian.js'
 
 import RollsRoyce from './components/Brand/RollsRoyce.js'
 import AstonMartin from './components/Brand/AstonMartin.js'
-import McLaren from './components/Brand/McLaren';
 import Corvette from './components/Brand/Corvette';
+import McLaren from './components/Brand/McLaren'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom' 
 import Signup from './components/user/Signup'
@@ -60,7 +61,7 @@ function App() {
   const loginHandler = (cred) => {
     axios.post("http://localhost:4000/auth/signin", cred)
     .then(res => {
-      console.log(res.data.token)
+    console.log(res.data.token)
 
       // Store the token in Local Storage.
       if(res.data.token != null){
@@ -95,6 +96,7 @@ function App() {
           <Route path='/contact' element={<ContactPage />} />
           <Route path='/policy' element={<PolicyPage />} />
           <Route path='/category' element={<CategoryPage />} />
+          <Route path='/NewCar/NewCar' element={<NewCar/>}/>
 
           <Route path='/category/Bugatti' element={<Bugatti />} />
           <Route path='/category/AstonMartin' element={<AstonMartin />} />

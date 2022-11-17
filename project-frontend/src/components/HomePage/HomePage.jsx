@@ -4,9 +4,10 @@ function HomePage() {
   return (
 
     
-    <div className="HA">
+    <div className="Home">
       
-      <p3>Platino Wheels</p3>
+      <p3>Platino 
+        Wheels</p3>
     
     <img src="https://64.media.tumblr.com/500ec4981de93b98ce8d50f1980ae728/tumblr_owuse5TtH21rnxn7co1_500.gifv"  alt="" 
     width="100%"/>

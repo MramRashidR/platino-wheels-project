@@ -8,7 +8,7 @@ function PolicyPage() {
 
       <h2>For your best experience buying online, here are some tips from our experienced Platino Edition team:</h2>
 
-      <ul class = 'policy'>
+      <ul class = 'policy2'>
         <li>Never pay for goods in advance. Reputable dealers will request payment on deliver your use established escrow systems.</li>
         <li>Make sure to sign a written contract before transactions are made.</li>
         <li>Paper work sent by electronic means can easily be falsified. Have this in mind if you ask for registration and identity documents by e-mail.</li>
