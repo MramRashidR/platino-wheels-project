@@ -12,4 +12,6 @@ router.post('/cars', isLoggedIn, carsController.createCar)
 
 router.delete('/cars/:_id', carsController.deleteCar)
 
+router.get('/cars/category/:Brand', carsController.getCarsByCategory)
+
 module.exports = router

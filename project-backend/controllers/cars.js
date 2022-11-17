@@ -34,8 +34,19 @@ async function getCar(req,res) {
     }
 }
 
+async function getCarsByCategory(req,res) {
+
+    const carsList = await Car.find({
+        Brand: req.params.Brand
+    })
+
+
+    res.json(carsList)
+}
+
 // Exporting functions
 module.exports = {
+    getCarsByCategory,
     getAllCars,
     getCar,
     createCar,

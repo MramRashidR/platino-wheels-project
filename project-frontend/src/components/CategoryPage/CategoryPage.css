@@ -1,0 +1,37 @@
+.Category1 {
+    display: inline-flex;
+    list-style: none;
+    /* padding-top: 50px; */
+}
+.list-1{
+    margin-left: 25px;
+    display: inline-flex;
+    list-style: none;
+    padding-top: 70px;
+}
+.Category2 {
+    display: inline-flex;
+    list-style: none;
+}
+.list-2{
+    display: inline-flex;
+    list-style: none;
+    margin-left: 25px;
+    padding-top: 50px;
+}
+img {
+    background-size: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
