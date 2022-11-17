@@ -7,19 +7,19 @@ function ContactPage() {
     <div class = 'contact'>
       <h2>Working Hours:</h2>
       <ul class = 'contact'>
-        <li>Sunday</li>
-        <li>Monday</li>
-        <li>Tuesday</li>
-        <li>Wedensday</li>
-        <li>Thursday</li>
-        <li>Friday</li>
-        <li>Saturday</li>
+        <li>Sunday 9AM-5PM</li>
+        <li>Monday 9AM-5PM</li>
+        <li>Tuesday 9AM-5PM</li>
+        <li>Wedensday 9AM-5PM</li>
+        <li>Thursday 9AM-5PM</li>
+        <li>Friday OFF DAY</li>
+        <li>Saturday OFF DAY</li>
       </ul>
 
-      <h3>Contact information:</h3>
+      <h3>Contact Information:</h3>
       <ul class = 'contact'>
-        <li>Email: salman@sei-bh.com</li>
-        <li>Phone number: 3655998</li>
+        <li>Email: PlatinoWheels@pla-tino.com</li>
+        <li>Phone number: 1777CARS</li>
       </ul>
       </div>
   )

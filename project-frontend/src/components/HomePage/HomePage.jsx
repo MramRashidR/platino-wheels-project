@@ -6,8 +6,7 @@ function HomePage() {
     
     <div className="Home">
       
-      <p3>Platino 
-        Wheels</p3>
+      <p3>PLATINO WHEELS</p3>
     
     <img src="https://64.media.tumblr.com/500ec4981de93b98ce8d50f1980ae728/tumblr_owuse5TtH21rnxn7co1_500.gifv"  alt="" 
     width="100%"/>
@@ -23,7 +22,7 @@ to Facilitate Life's Most Important Personal Transactions
 </> */}
 <p1>Platino Wheels are the Best of the Best</p1>
 <p>Through a combination of automation and manual curation our moderation team 
-selects the highest quality listings on the marke t</p>
+selects the highest quality listings on the market</p>
 
     </div>
 

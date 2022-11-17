@@ -18,26 +18,28 @@ export default function Signin(props) {
     }
 
   return (
-    <div>
-        <h1>Sign In</h1>
+    <div id='signbody'>
+        <h1>SIGN IN</h1>
 
         <Container>
-            <Form.Group>
-                <Form.Label>username</Form.Label>
-                <Form.Control name="username" onChange={changeHandler}></Form.Control>
+            <Form.Group id = 'username'>
+
+                <Form.Label>Username</Form.Label>
+                <Form.Control name="username" type="username" onChange={changeHandler}></Form.Control>
             </Form.Group>
 
-            <Form.Group>
+            <Form.Group id= 'password'>
                 <Form.Label>Password</Form.Label>
                 <Form.Control name="password" type="password" onChange={changeHandler}></Form.Control>
             </Form.Group>
 
             <br></br>
 
-            <Button variant="primary" onClick={loginHandler}>Login</Button>
+            <Button id='button' variant="primary" onClick={loginHandler}>Login</Button>
 
         </Container>
         
     </div>
   )
 }
+

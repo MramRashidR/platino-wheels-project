@@ -20,19 +20,19 @@ export default function Signup(props) {
 
   return (
     <div>
-        <h1>Signup</h1>
+        <h1>SIGN UP</h1>
 
 
         <Container id = 'signup'>
             <Form.Group id = 'username'>
 
                 <Form.Label>Username</Form.Label>
-                <Form.Control name="username" onChange={changeHandler}></Form.Control>
+                <Form.Control name="username" type="username" onChange={changeHandler}></Form.Control>
             </Form.Group>
 
             <Form.Group id = 'email'>
                 <Form.Label>Email Address</Form.Label>
-                <Form.Control name="email" onChange={changeHandler}></Form.Control>
+                <Form.Control name="email" type="email" onChange={changeHandler}></Form.Control>
             </Form.Group>
 
             <Form.Group id = 'password'>
@@ -42,7 +42,7 @@ export default function Signup(props) {
 
             <br></br>
 
-            <Button variant="primary" onClick={regsiterHandler}>Register</Button>
+            <Button id = 'button' variant="primary" onClick={regsiterHandler}>Register</Button>
 
         </Container>
         
