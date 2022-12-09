@@ -21,11 +21,12 @@ export default function RollsRoyce() {
 
       {carsList.length ? carsList.map(car => 
         <div key={car._id}>
-        <p> Brand : {car.Brand}</p>
-        <p> Year : {car.Year}</p>
-        <p> Price : {car.Price}</p>
-        <p> Description : {car.Description}</p>
-        <p> Contact Information : {car.Contact}</p>
+        <img src={car.Photo}></img>
+        <p> {car.Brand}</p>
+        <p> {car.Year}</p>
+        <p> {car.Price}</p>
+        <p> {car.Description}</p>
+        <p> {car.Contact}</p>
         </div>
         ) : null}
 

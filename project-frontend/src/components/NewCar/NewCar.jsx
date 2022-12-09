@@ -4,20 +4,14 @@ import { Link } from 'react-router-dom'
 import './NewCar.css';
 
 function NewCar() {
-    const [carsList, setCarsList] = useState([])
+    const [car, setCar] = useState({})
 
   useEffect(() => {
-    getCars()
   }, [])
 
-  const getCars = () => {
-    axios.get('http://localhost:4000/cars')
-    .then(res => setCarsList(res.data))
-    .catch(err => console.log(err))
-  }
 
   const [formData, setFormData] = useState({
-        Photo:'',
+        Photo:'https://imgur.com/mVD0uik',
         Brand: '',
         Year: '',
         Price: '',
@@ -29,11 +23,12 @@ function NewCar() {
     //Store the user input into state
     setFormData({
       ...formData,
-      [e.target.Brand]: e.target.value
+      [e.target.name]: e.target.value
     })
   }
 
   const handleSubmit = (e) => {
+    e.preventDefault()
     // axios.post(Create a tweet)
     axios.post('http://localhost:4000/cars', formData,
     {
@@ -41,8 +36,7 @@ function NewCar() {
         "Authorization": "Bearer " + localStorage.getItem("token")
       }
     })
-    .then(res => console.log(res))
-    .then(() => getCars())
+    .then(res => setCar(res.data))
     .catch(err => console.log(err))
   }
   return (
@@ -50,6 +44,7 @@ function NewCar() {
         <form onSubmit={handleSubmit}>
         <label for="file" class="pic">Upload photo:</label>
         <input type="file" value={formData.Photo} name="Img" /><br></br>
+
 
         <label >Brand</label>
         <input type="text" name="Brand" defaultvalue={formData.Brand} onChange={handleChange}/> <br></br>
@@ -70,17 +65,19 @@ function NewCar() {
 
         </form>
     
-        {/* {carsList.length ? carsList.map(car => 
-        <div key={car._id} >
-            <p>Photo: {car.Photo}</p>
+        {/* {carsList.length ? carsList.map(car =>  */}
+        {/* <div key={car._id} > */}
+        {car ? 
+        <div>
+            <p>Photo: <img src={car.Photo} /></p>
             <p>Brand: {car.Brand}</p>
             <p>Year: {car.Year}</p>
             <p>Price: {car.Price}</p>
             <p>Description: {car.Description}</p>
             <p>Contact: {car.Contact}</p>
-        </div>
-        )
-        : null} */}
+            </div>
+            : null 
+        }
 
     </div>
         )

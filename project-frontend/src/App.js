@@ -16,7 +16,7 @@ import Rivian from './components/Brand/Rivian.js'
 import RollsRoyce from './components/Brand/RollsRoyce.js'
 import AstonMartin from './components/Brand/AstonMartin.js'
 import Corvette from './components/Brand/Corvette';
-import McLaren from './components/Brand/McLaren'
+import McLaren from './components/Brand/McLaren';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom' 
 import Signup from './components/user/Signup'
