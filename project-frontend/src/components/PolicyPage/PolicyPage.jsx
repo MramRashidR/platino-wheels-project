@@ -2,8 +2,8 @@ import React from 'react'
 import './PolicyPage.css'
 function PolicyPage() {
   return (
+   
     <div class = 'policy'>
-
       <h1>Buying safely policy</h1>
 
       <h2>For your best experience buying online, here are some tips from our experienced Platino Edition team:</h2>

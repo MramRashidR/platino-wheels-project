@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import './NewCar.css';
 
 function NewCar() {
     const [car, setCar] = useState({})
@@ -41,10 +42,11 @@ function NewCar() {
   return (
     <div className='sell-form' >
         <form onSubmit={handleSubmit}>
-        <label for="file" class="pic">upload photo:</label>
-        <input type="file" name="Img" /><br></br>
+        <label for="file" class="pic">Upload photo:</label>
+        <input type="file" value={formData.Photo} name="Img" /><br></br>
 
-        <label>Brand</label>
+
+        <label >Brand</label>
         <input type="text" name="Brand" defaultvalue={formData.Brand} onChange={handleChange}/> <br></br>
 
         <label>Year</label>
