@@ -19,7 +19,7 @@ function CategoryPage(props) {
               <li className='list-2'><Link to='/category/Rivian'><img src="https://i.imgur.com/70L5fwU.jpg"></img></Link> </li>
            </ul>
 
-            <Link to='/NewCar/NewCar'>Sell Car</Link>
+           <Link className='button1' to='/NewCar/NewCar'>Sell Car</Link> 
 
         </div></>
 

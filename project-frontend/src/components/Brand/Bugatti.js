@@ -21,6 +21,7 @@ export default function Bugatti() {
 
       {carsList.length ? carsList.map(car => 
         <div key={car._id}>
+          <img src={car.Photo}></img>
         <p> Brand : {car.Brand}</p>
         <p> Year : {car.Year}</p>
         <p> Price : {car.Price}</p>
